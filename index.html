@@ -293,7 +293,17 @@
     }
     .contact-item div { display: flex; flex-direction: column; }
     .contact-item strong { font-size: 0.8rem; color: var(--text-light); font-weight: 500; margin-bottom: 2px; }
-    .contact-item span { font-size: 0.95rem; color: var(--text); font-weight: 500; }
+    .contact-item span { font-size: 0.95rem; color: var(--text); font-weight: 600; }
+    .contact-item a { 
+      font-size: 0.95rem; 
+      color: var(--text); 
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    .contact-item a:hover { 
+      color: var(--accent); 
+      text-decoration: underline;
+    }
     .map-container {
       border-radius: var(--radius); overflow: hidden;
       box-shadow: var(--shadow); height: 100%; min-height: 420px;
@@ -697,7 +707,7 @@
             <i class="fas fa-envelope"></i>
             <div>
               <strong>Email</strong>
-              <strong><a href="mailto:info@technomare.com">info@technomare.com </a></strong>
+              <a href="mailto:info@technomare.com">info@technomare.com</a>
             </div>
           </div>
           <div class="contact-item">
@@ -768,13 +778,10 @@
         <p><i class="fas fa-map-marker-alt" style="color:var(--accent);margin-right:6px;"></i>
           <span data-lang-el="Κενέντυ 30" data-lang-en="Kennedy 30">Μαρίνα Λευκάδος</span></p>
         <p><i class="fas fa-phone" style="color:var(--accent);margin-right:6px;"></i>+30 6974191113</p>
-        <p> 
-  <p style="display: inline-flex; align-items: center; margin: 0;">
-  <i class="fas fa-envelope" style="color:var(--accent); margin-right:6px;"></i> 
-  <a href="mailto:info@technomare.com">info@technomare.com</a> 
-</p>
-
-
+        <p style="display: inline-flex; align-items: center; margin: 0;">
+          <i class="fas fa-envelope" style="color:var(--accent); margin-right:6px;"></i> 
+          <a href="mailto:info@technomare.com">info@technomare.com</a> 
+        </p>
       </div>
     </div>
     <div class="footer-bottom">
